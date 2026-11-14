@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RetailFlow – End-to-End Data Engineering Project
 
 ## Project Overview
@@ -216,3 +217,7 @@ RetailFlow-Data-Engineering-Project/
 GitHub: [Ragul040917](https://github.com/Ragul040917)
 
 Project: RetailFlow – End-to-End Data Engineering Project
+=======
+# RetailFlow-Data-Engineering-Project.
+End-to-end retail data engineering project using Databricks, PySpark, Delta Lake, Medallion Architecture and SQL Analytics.
+>>>>>>> cbf67b1c0e3d1090bfc92c7ca3e49ecb9172e3d7
