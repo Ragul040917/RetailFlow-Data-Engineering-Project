@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # RetailFlow – End-to-End Data Engineering Project
 
 ## Project Overview
@@ -221,3 +220,6 @@ Project: RetailFlow – End-to-End Data Engineering Project
 # RetailFlow-Data-Engineering-Project.
 End-to-end retail data engineering project using Databricks, PySpark, Delta Lake, Medallion Architecture and SQL Analytics.
 >>>>>>> cbf67b1c0e3d1090bfc92c7ca3e49ecb9172e3d7
+=======
+
+>>>>>>> 81aa4c0a3804e66bcfd2aa95b68f69dd31a294e7
