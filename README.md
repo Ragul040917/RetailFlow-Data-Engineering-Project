@@ -223,3 +223,44 @@ End-to-end retail data engineering project using Databricks, PySpark, Delta Lake
 =======
 
 >>>>>>> 81aa4c0a3804e66bcfd2aa95b68f69dd31a294e7
+
+
+## 🏗️ Project Architecture
+
+The RetailFlow project follows the Medallion Architecture using Databricks, PySpark, and Delta Lake.
+
+```mermaid
+flowchart TD
+    A["Retail CSV Files<br/>Orders, Order Items,<br/>Products, Stores"]
+    B["Databricks Volume<br/>Raw Data Storage"]
+
+    C["🥉 Bronze Layer<br/>Raw Delta Tables"]
+    D["🥈 Silver Layer<br/>Cleaned and Validated Data"]
+    E["🥇 Gold Layer<br/>Business Aggregations"]
+
+    F["Databricks SQL Dashboard<br/>Daily Sales Trends<br/>Top Products<br/>Store Performance<br/>Monthly Sales"]
+
+    G["Data Quality Checks<br/>11 Validation Rules"]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+
+    D -.-> G
+    E -.-> G
+```
+
+
+## 📊 Dashboard Preview
+
+The Databricks SQL dashboard provides insights into daily revenue, top-performing products, store performance, and monthly sales.
+
+![RetailFlow Dashboard](Screenshots/retailflow_dashboard.jpg)
+
+## ✅ Data Quality Results
+
+The project implements 11 data quality validation checks across the Silver and Gold layers. All 11 checks passed successfully.
+
+![Data Quality Results](Screenshots/data_quality_results.png)
