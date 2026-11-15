@@ -30,31 +30,31 @@ The final output is an interactive sales analytics dashboard that helps analyze 
 | Medallion Architecture | Organizing data processing layers |
 | Databricks SQL | Dashboard and visualization |
 
-## Project Architecture
+## 🏗️ Project Architecture
 
-```text
-                Raw Retail CSV Files
-                         |
-                         v
-                 BRONZE LAYER
-                Raw Data Ingestion
-                         |
-                         v
-                 SILVER LAYER
-             Data Cleaning and Quality
-                         |
-                         v
-                  GOLD LAYER
-               Business Aggregations
-                         |
-                         v
-             Automated Data Validation
-                         |
-                         v
-              Databricks SQL Dashboard
-                         |
-                         v
-                  Business Insights
+The RetailFlow project follows the Medallion Architecture using Databricks, PySpark, and Delta Lake.
+
+```mermaid
+flowchart TD
+    A["Retail CSV Files<br/>Orders, Order Items,<br/>Products, Stores"]
+    B["Databricks Volume<br/>Raw Data Storage"]
+
+    C["🥉 Bronze Layer<br/>Raw Delta Tables"]
+    D["🥈 Silver Layer<br/>Cleaned and Validated Data"]
+    E["🥇 Gold Layer<br/>Business Aggregations"]
+
+    F["Databricks SQL Dashboard<br/>Daily Sales Trends<br/>Top Products<br/>Store Performance<br/>Monthly Sales"]
+
+    G["Data Quality Checks<br/>11 Validation Rules"]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+
+    D -.-> G
+    E -.-> G
 ```
 
 ## Dataset Description
@@ -209,49 +209,16 @@ RetailFlow-Data-Engineering-Project/
 - Building reusable data quality validation logic.
 - Creating business intelligence dashboards.
 
-## Author
 
-**Ragul Pushparaj**
+## Project Information
 
-GitHub: [Ragul040917](https://github.com/Ragul040917)
+**Project Name:** RetailFlow – End-to-End Data Engineering Project
 
-Project: RetailFlow – End-to-End Data Engineering Project
-=======
-# RetailFlow-Data-Engineering-Project.
-End-to-end retail data engineering project using Databricks, PySpark, Delta Lake, Medallion Architecture and SQL Analytics.
->>>>>>> cbf67b1c0e3d1090bfc92c7ca3e49ecb9172e3d7
-=======
+**Technologies:** Databricks, PySpark, Delta Lake, SQL
 
->>>>>>> 81aa4c0a3804e66bcfd2aa95b68f69dd31a294e7
+**Architecture:** Medallion Architecture (Bronze, Silver, Gold)
 
-
-## 🏗️ Project Architecture
-
-The RetailFlow project follows the Medallion Architecture using Databricks, PySpark, and Delta Lake.
-
-```mermaid
-flowchart TD
-    A["Retail CSV Files<br/>Orders, Order Items,<br/>Products, Stores"]
-    B["Databricks Volume<br/>Raw Data Storage"]
-
-    C["🥉 Bronze Layer<br/>Raw Delta Tables"]
-    D["🥈 Silver Layer<br/>Cleaned and Validated Data"]
-    E["🥇 Gold Layer<br/>Business Aggregations"]
-
-    F["Databricks SQL Dashboard<br/>Daily Sales Trends<br/>Top Products<br/>Store Performance<br/>Monthly Sales"]
-
-    G["Data Quality Checks<br/>11 Validation Rules"]
-
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-
-    D -.-> G
-    E -.-> G
-```
-
+**Focus:** Data ingestion, transformation, quality validation, and business analytics.
 
 ## 📊 Dashboard Preview
 
